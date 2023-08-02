@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My jQuery Page</title>
+</head>
+<body>
+    <div id="glowscript" class="glowscript">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+        <link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+        <script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+        <script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+        <script type="text/javascript">
+{% comment %} IMMEDIATELY INVOKED FUNCTION EXPRESSION {% endcomment %}
+{% comment %} ρσ_modules - USED TO DEFINE ENV{% endcomment %}
+        
+        // START JAVASCRIPT
+        ;(function() {;
+        var ρσ_modules = {};
+        ρσ_modules.pythonize = {};
+        
+        (function(){
+            function strings() {
+                var string_funcs, exclude, name;
+                string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+                if (!arguments.length) {
+                    exclude = (function(){
+                        var s = ρσ_set();
+                        s.jsset.add("split");
+                        s.jsset.add("replace");
+                        return s;
+                    })();
+                } else if (arguments[0]) {
+                    exclude = Array.prototype.slice.call(arguments);
+                } else {
+                    exclude = null;
+                }
+                if (exclude) {
+                    string_funcs = string_funcs.difference(set(exclude));
+                }
+                var ρσ_Iter0 = string_funcs;
+                ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+                for (var ρσ_Index0 of ρσ_Iter0) {
+                    name = ρσ_Index0;
+                    (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+                }
+            };
+            if (!strings.__module__) Object.defineProperties(strings, {
+                __module__ : {value: "pythonize"}
+            });
+        
+            ρσ_modules.pythonize.strings = strings;
+        })();
+        async function __main__() {
+        "use strict";
+            var display = canvas;
+            var scene = canvas();
+        
+            function round(num, n=0) {return Number(num.toFixed(n))}
+            fontloading();
+            await waitforfonts();
+        
+            var version, print, arange, __name__, type, ρσ_ls, scene, bulb, battery_casing, positive_terminal_battery, negative_terminal_battery, cube, wire_battery_to_bulb, wire_bulb_to_switch, wire_switch_to_resistor, wire_resistor_to_battery, ball_pos, velocities, num_loops, ball, rate_value, dark_brown, light, velocity, _;
+            version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+            Array.prototype['+'] = function(r) {return this.concat(r)}
+            Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+            window.__GSlang = "vpython";
+            print = GSprint;
+            arange = range;
+            __name__ = "__main__";
+            type = pytype;
+            var strings = ρσ_modules.pythonize.strings;
+        
+            strings();
+            "4";
+            scene = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({host: "0.0.0.0", port: 8080})]);
+            "6";
+            scene.background = color.black;
+            "9";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(5, 7.5, 0), text: "BATTERY", align: "center", color: color.cyan, height: .5})]);
+            "10";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(6.8, 6, 0), text: "+", align: "center", color: color.red, height: .9})]);
+            "11";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(6.8, 4, 0), text: "-", align: "center", color: color.blue, height: .9})]);
+            "14";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(5, 1["-u"]()["*"](6.5), 0), text: "LIGHT", align: "center", color: color.yellow, height: .5})]);
+            "17";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](8), 1["-u"]()["*"](5.5), 0), text: "SWITCH", align: "center", color: color.white, height: .5})]);
+            "18";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](6), 1["-u"]()["*"](4), 0), text: "ON", align: "center", color: color.green, height: .5})]);
+            "19";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](6), 1["-u"]()["*"](6.5), 0), text: "OFF", align: "center", color: color.red, height: .5})]);
+            "22";
+            ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](4), 6, 0), text: " _/\\/\\/\\_ \n 5 Ω ", align: "center", color: color.white, height: .5})]);
+            "26";
+            bulb = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: vector(5, 1["-u"]()["*"](5), 0), radius: .5, color: color.yellow, opacity: .8})]);
+            "30";
+            battery_casing = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(5, 5, 0), size: vector(2, 4, 1), color: color.gray(.7)})]);
+            "31";
+            positive_terminal_battery = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(6, 5.5, 0), axis: vector(0, 0, 1), radius: .25, height: 1, color: color.red})]);
+            "32";
+            negative_terminal_battery = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(6, 4.5, 0), axis: vector(0, 0, 1), radius: .25, height: 1, color: color.blue})]);
+            "35";
+            cube = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](5), 1["-u"]()["*"](5), 0), size: vector(1, 2, 1), color: color.gray(.5)})]);
+            "38";
+            wire_battery_to_bulb = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(5, 4, 0), axis: vector(0, 1["-u"]()["*"](9), 0), radius: .05, color: color.gray(.5)})]);
+            "39";
+            wire_bulb_to_switch = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(4.5, 1["-u"]()["*"](5), 0), axis: vector(1["-u"]()["*"](9), 0, 0), radius: .05, color: color.gray(.5)})]);
+            "40";
+            wire_switch_to_resistor = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](5), 1["-u"]()["*"](4), 0), axis: vector(0, 10, 0), radius: .05, color: color.gray(.5)})]);
+            "41";
+            wire_resistor_to_battery = ρσ_interpolate_kwargs.call(this, curve, [ρσ_desugar_kwargs({pos: ρσ_list_decorate([ vector(5, 6, 0), vector(1["-u"]()["*"](5), 6, 0) ]), radius: .05, color: color.gray(.5)})]);
+            "44";
+            ball_pos = vector(5, 6, 0);
+            "45";
+            velocities = ρσ_list_decorate([ vector(1["-u"]()["*"](.1), 0, 0), vector(0, 1["-u"]()["*"](.1), 0), vector(.1, 0, 0), vector(0, .1, 0) ]);
+            "51";
+            num_loops = 3;
+            "54";
+            ball = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({pos: ball_pos, radius: .2, color: color.red})]);
+            "55";
+            rate_value = 50;
+            "58";
+            for (var ρσ_Index1 = 0; ρσ_Index1["<"](num_loops); ρσ_Index1++) {
+                _ = ρσ_Index1;
+                "59";
+                var ρσ_Iter2 = velocities;
+                ρσ_Iter2 = ((typeof ρσ_Iter2[Symbol.iterator] === "function") ? (ρσ_Iter2 instanceof Map ? ρσ_Iter2.keys() : ρσ_Iter2) : Object.keys(ρσ_Iter2));
+                for (var ρσ_Index2 of ρσ_Iter2) {
+                    velocity = ρσ_Index2;
+                    "60";
+                    while (true) {
+                        "61";
+                        (await rate(rate_value));
+                        "64";
+                        ball_pos=ball_pos["+"](velocity);
+                        "67";
+                        ball.pos = ball_pos;
+                        "70";
+                        if (velocity.x["<"](0) && ball_pos.x["<="](1["-u"]()["*"](5))) {
+                            "71";
+                            rate_value = 15;
+                            "73";
+                            break;
+                            "74";
+                        } else if (velocity.y["<"](0) && ball_pos.y["<="](1["-u"]()["*"](5))) {
+                            "75";
+                            bulb = ρσ_interpolate_kwargs.call(this, local_light, [ρσ_desugar_kwargs({pos: vector(5, 1["-u"]()["*"](5), 0), color: color.yellow, opacity: 10})]);
+                            "76";
+                            bulb.visible = true;
+                            "78";
+                            dark_brown = vector(.4, .2, 0);
+                            "81";
+                            scene.background = dark_brown;
+                            "82";
+                            break;
+                            "83";
+                        } else if (velocity.x[">"](0) && ball_pos.x[">="](5)) {
+                            "84";
+                            break;
+                            "85";
+                        } else if (velocity.y[">"](0) && ball_pos.y[">="](6)) {
+                            "86";
+                            light = ρσ_interpolate_kwargs.call(this, distant_light, [ρσ_desugar_kwargs({direction: vector(5, 5, 0), color: color.black})]);
+                            "90";
+                            bulb.visible = false;
+                            "96";
+                            scene.background = color.black;
+                            "97";
+                            break;
+                        }
+                    }
+                }
+            }
+        };
+        if (!__main__.__module__) Object.defineProperties(__main__, {
+            __module__ : {value: null}
+        });
+        
+        ;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+        // END JAVASCRIPT
+        
+        //--><!]]></script>
+        </div>
+</body>
+</html>
